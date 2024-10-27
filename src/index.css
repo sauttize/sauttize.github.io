@@ -2,7 +2,111 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-primary: #EC6B45;
+  --color-gray: #1D1D1D;
+  --color-light-gray: #414141;
+  --color-extra-light-gray: #777777;
+  --color-text: #EDEDED;
+  --color-background: #131313;
+  --color-box-shadow: rgba(0, 0, 0, 0.15);
+
+  --color-sidebar-text: #8D8D8D;
+  --color-sidebar-text-hover: #a8a8a8;
+}
+
 body {
-  font-family: system-ui, sans-serif;
-  background-color: rgb(49, 49, 49);
+  font-family: 'Gothic A1', system-ui, sans-serif;
+  background-color: var(--color-background);
+}
+
+main {
+  width: 100%;
+  display: flex;
+}
+
+h1 {
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  color: var(--color-text);
+  line-height: 1;
+  margin-bottom: -10px;
+}
+
+h2 {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  color: var(--color-text);
+}
+
+
+h3 {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: var(--color-text);
+}
+
+
+/* FONTS */
+.gothic-a1-thin {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.gothic-a1-extralight {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.gothic-a1-light {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.gothic-a1-regular {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gothic-a1-medium {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.gothic-a1-semibold {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.gothic-a1-bold {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.gothic-a1-extrabold {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.gothic-a1-black {
+  font-family: "Gothic A1", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.jersey-25-regular {
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }

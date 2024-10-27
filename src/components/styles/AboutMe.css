@@ -1,0 +1,77 @@
+.name-p {
+    font-size: 48px;
+    margin-bottom: -22px;
+    transform: translateX(20px);
+}
+
+.info-p {
+    font-size: 24px;
+}
+
+.info-p1 {
+    transform: translateX(-50px);
+    margin-bottom: -50px;
+}
+
+.info-p2 {
+    transform: translateX(50px);
+}
+
+.cats-p {
+    font-size: 14px;
+}
+
+.name {
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 72px;
+}
+
+.profile-info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.profile-pic {
+    min-height: 141px;
+    max-height: 141px;
+    min-width: 344px;
+    max-width: 344px;
+    background-color: rgb(135, 130, 141);
+    border: 1px solid #6D6D6D;
+    overflow: hidden;
+}
+
+.masked-image {
+    object-fit: 100%;
+    transform: translateY(-100px);
+}
+
+.list-p {
+    font-size: 20px;
+}
+
+.list-p-bold {
+    font-weight: 600;
+}
+
+.info-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.svg-container {
+    margin-top: 30px;
+}
+
+.big-cat-text {
+    width: 100%;
+    font-size: 12px;
+    color: var(--color-extra-light-gray);
+}
