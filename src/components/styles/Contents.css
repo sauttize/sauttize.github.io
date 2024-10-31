@@ -9,12 +9,14 @@
     font-weight: 400;
     color: var(--color-text);
     margin-right: 28px;
+    margin-left: 28px;
 }
 
 .ordered-content {
     width: 100%;
     margin-top: 30px;
     margin-right: 28px;
+    margin-left: 28px;
     display: flex;
     flex-direction: column;
     gap: 5px;

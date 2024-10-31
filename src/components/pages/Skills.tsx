@@ -34,7 +34,7 @@ function Skills() {
                 <h2 className='translate-x-5'>Some of the technologies I’ve used include...</h2>
                 <WhiteLine/>
                 <div className="level-container">
-                    <p className='skill-level-p'>SKILL LEVEL {'>>'}</p>
+                    <p className='skill-level-p'>SKILL LEVEL</p>
                     <div className="stars-container">
                         {Array.from({ length: 10 }, (_, index) => (
                             <img

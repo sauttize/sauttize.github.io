@@ -6,6 +6,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: fixed;
+}
+
+.sidebar-space {
+    height: 100vh;
+    min-width: 228px;
+    max-width: 228px;
+}
+
+@media (max-width: 900px) {
+    .sidebar, .sidebar-space {
+        display: none;
+    }
 }
 
 .box1 {

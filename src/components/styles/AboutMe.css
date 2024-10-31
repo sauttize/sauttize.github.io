@@ -75,3 +75,39 @@
     font-size: 12px;
     color: var(--color-extra-light-gray);
 }
+
+@media (max-width: 900px) {
+    .name-p {
+        font-size: 32px;
+        margin-bottom: -10px;
+        transform: translateX(40px);
+    }
+
+    .name {
+        font-size: 48px;
+    }
+
+    .info-p {
+        font-size: 18px;
+    }
+
+    .info-p1 {
+        transform: translateX(-10px);
+        margin-bottom: -30px;
+    }
+
+    .info-p2 {
+        transform: translateX(20px);
+    }
+
+    .profile-info {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .info-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
