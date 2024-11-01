@@ -51,6 +51,10 @@ h3 {
   color: var(--color-text);
 }
 
+p {
+  color: var(--color-text);
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 48px;
