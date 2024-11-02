@@ -2,25 +2,40 @@ import '../styles/Contents.css'
 import SideBar from "../SideBar";
 import WhiteLine from '../WhiteLine';
 
+import { useState } from 'react';
+
+import { Game } from '../../domain/Game';
 import { GameList } from '../../data/GameList';
 import GameCard from '../GameCard';
+import GameInfo from './GameInfo';
 
 function Games() {
+    const [selectedGame, setSelectedGame] = useState<Game | null>(null);
+
+    const handleGameClick = (game: Game) => {
+        setSelectedGame(game);
+    };    
+
     return (
         <>
             <SideBar currentPage='games'/>
             <div className="ordered-content">
-                <div className="w-full flex flex-col justify-items-center">
-                    <h1>Games</h1>
-                    <h2>yes, all of them were for jams. 
-                    Making games isn't easy...</h2>
-                </div>
-                <WhiteLine/>
-                <div className="games pt-2">
-                    {GameList.map((game) => (
-                        <GameCard game={game} key={game.getName()}/>
-                    ))}
-                </div>
+                {selectedGame ? (
+                    <GameInfo game={selectedGame} onBack={() => setSelectedGame(null)} />
+                ) : (
+                    <>
+                        <div className="w-full flex flex-col justify-items-center">
+                            <h1>Games</h1>
+                            <h2>some of my favorite short games i've made to learn game dev</h2>
+                        </div>
+                        <WhiteLine/>
+                        <div className="games pt-2 flex auto-f-center">
+                            {GameList.map((game) => (
+                                <GameCard game={game} key={game.getName()} onClick={() => handleGameClick(game)} />
+                            ))}
+                        </div>
+                    </>
+                )}
             </div>
         </>
     );

@@ -6,13 +6,18 @@ makeMeLaugh.setDescription(
     "(with some extra polish afterwards). Escape the place while keeping " +
     "the jester entertain (don't let the music box stop)."
 )
-makeMeLaugh.addTeamMember("Coding:", "Nicolas Tejera]");
-makeMeLaugh.addTeamMember("Game Design:", "Joaquin de los Santos");
-makeMeLaugh.addTeamMember("2D Art:", "Stefano Icardo, Juan Manuel Vaitkevicius, Rodrigo Ledesma");
-makeMeLaugh.addTeamMember("3D Art:", "Benjamin Martinez");
+makeMeLaugh.addTeamMember("Coding", "Nicolas Tejera");
+makeMeLaugh.addTeamMember("Game Design", "Joaquin de los Santos");
+makeMeLaugh.addTeamMember("2D Art", "Stefano Icardo, Juan Manuel Vaitkevicius, Rodrigo Ledesma");
+makeMeLaugh.addTeamMember("3D Art", "Benjamin Martinez");
 makeMeLaugh.setLink("https://sauttize.itch.io/make-me-laugh");
 makeMeLaugh.setImage('/games/make_me_laugh/screenshot.webp');
-
+makeMeLaugh.setScreenshots([
+    'https://img.itch.zone/aW1hZ2UvMjUwMTcwNS8xNDk4OTIzOS5wbmc=/original/ToK6fe.png',
+    'https://img.itch.zone/aW1hZ2UvMjUwMTcwNS8xNDk4OTI0MS5wbmc=/original/rd332X.png',
+    'https://img.itch.zone/aW1hZ2UvMjUwMTcwNS8xNDk4OTI0My5wbmc=/original/nuneWY.png'
+]);
+makeMeLaugh.tools = ["Godot"];
 
 export const GameList = [
     makeMeLaugh

@@ -1,4 +1,6 @@
-export class Game {
+import IProject from "./interfaces/IProject";
+
+export class Game implements IProject {
     private name: string;
     private genres: string[];
     private releaseYear: number;
@@ -7,6 +9,9 @@ export class Game {
     private team: { [key: string]: string } = {};
     private link: string;
     private image: string = "";
+    private screenshots: string[] = [];
+    
+    public tools: string[] = [];
 
     constructor(name: string, genres: string[], releaseYear: number, keywords: string[], link: string) {
         this.name = name;
@@ -50,6 +55,22 @@ export class Game {
 
     public getLink(): string {
         return this.link;
+    }
+
+    public getScreenshots(): string[] {
+        return this.screenshots;
+    }
+
+    public setScreenshots(screenshots: string[]): void {
+        this.screenshots = screenshots;
+    }
+
+    public addScreenshot(screenshot: string): void {
+        this.screenshots.push(screenshot);
+    }
+
+    public removeScreenshot(screenshot: string): void {
+        this.screenshots = this.screenshots.filter(s => s !== screenshot);
     }
 
     public setName(name: string): void {

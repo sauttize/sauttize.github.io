@@ -9,7 +9,7 @@ interface SkillIconProps {
 }
 
 function SkillButton({ onSelect, buttonId, selectedImage, unselectedImage, starAmount }: SkillIconProps) {
-    const [selected, setSelected] = useState(buttonId === 'godot' ? true : false);
+    const [selected, setSelected] = useState(buttonId === 'Godot' ? true : false);
 
     const handleClick = () => {
         setSelected(!selected);

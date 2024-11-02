@@ -67,6 +67,14 @@ p {
   h3 {
     font-size: 0.9em;
   }
+
+  .auto-column {
+    flex-direction: column;
+  }
+
+  .auto-f-center {
+    justify-content: center;
+  }
 }
 
 

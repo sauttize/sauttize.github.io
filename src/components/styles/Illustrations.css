@@ -2,8 +2,21 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: masonry;
-    align-items: start;
     gap: 10px;
 }
 
+.ill-container img {
+    object-fit: cover;
+    transform: translateY(-100px);
+}
+
+.img1, .img2, .img3, .img4 { 
+    width: 500px;
+    height: 250px;
+}
+
+@media (max-width: 900px) {
+    .ill-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -9,6 +9,8 @@ import { useEffect, useState } from 'react';
 
 import GodotUnselected from '/skill_icons/godot_unselected.svg';
 import GodotSelected from '/skill_icons/godot_selected.svg';
+import { ProjectList } from '../../data/ProjectList';
+import GameCard from '../GameCard';
 
 interface SelectedButtonState {
     buttonId: string;
@@ -23,7 +25,7 @@ function Skills() {
     };
 
     useEffect(() => {
-        handleButtonClick('godot', 7);
+        handleButtonClick('Godot', 7);
     }, []);
 
     return (
@@ -48,14 +50,16 @@ function Skills() {
                 </div>
                 <WhiteLine/>
                 <div className="skills-carousel">
-                    <SkillButton onSelect={handleButtonClick} buttonId='godot' selectedImage={GodotSelected} unselectedImage={GodotUnselected} starAmount={7}/>
+                    <SkillButton onSelect={handleButtonClick} buttonId='Godot' selectedImage={GodotSelected} unselectedImage={GodotUnselected} starAmount={7}/>
                 </div>
                 <WhiteLine/>
                 <p className='text-white'>used for:</p>
-                {selectedButton?.buttonId === 'godot' && (
+                {selectedButton?.buttonId === 'Godot' && (
                 <div className="selected-info text-white">
-                    <p>{'[Godot projects]'}</p>
-                </div> )
+                    {ProjectList.filter(project => project.tools.includes('Godot')).map(project => (
+                        <GameCard key={project.getName()} game={project} onClick={() => window.location.href = '/games'} />
+                    ))}
+                </div>)
                 }
             </div>
         </>
