@@ -4,12 +4,10 @@ import '../styles/AboutMe.css';
 import ProfilePic from '/profilepic.webp';
 import CatVector from '/catvector.svg';
 import WhiteLine from '../WhiteLine';
-import SideBar from '../SideBar';
 
 function AboutMe() {
     return (
         <>
-        <SideBar currentPage='aboutme'/>
         <div className='content'>
             <div className="intro-text">
                 <div className="name-p">

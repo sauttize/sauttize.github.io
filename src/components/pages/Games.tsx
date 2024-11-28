@@ -1,5 +1,4 @@
 import '../styles/Contents.css'
-import SideBar from "../SideBar";
 import WhiteLine from '../WhiteLine';
 
 import { useState } from 'react';
@@ -18,7 +17,6 @@ function Games() {
 
     return (
         <>
-            <SideBar currentPage='games'/>
             <div className="ordered-content">
                 {selectedGame ? (
                     <GameInfo game={selectedGame} onBack={() => setSelectedGame(null)} />

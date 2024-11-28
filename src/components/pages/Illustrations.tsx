@@ -1,7 +1,6 @@
 import '../styles/Contents.css'
 import '../styles/Illustrations.css'
 
-import SideBar from "../SideBar";
 import WhiteLine from '../WhiteLine';
 import ImageCard from '../ImageCard';
 
@@ -13,7 +12,6 @@ import HarleyIvy from '/illustrations/HarleyandIvy.jpg';
 function Illustrations() {
     return (
         <>
-            <SideBar currentPage='illustrations'/>
             <div className="ordered-content">
                 {/* translate-x-32 */}
                 <h1>Illustrations</h1>
