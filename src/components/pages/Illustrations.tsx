@@ -1,7 +1,6 @@
 import '../styles/Contents.css'
 import '../styles/Illustrations.css'
 
-import SideBar from "../SideBar";
 import WhiteLine from '../WhiteLine';
 
 //import Landscape from "/illustrations/landscape.jpeg";
@@ -12,7 +11,6 @@ import WhiteLine from '../WhiteLine';
 function Illustrations() {
     return (
         <>
-            <SideBar currentPage='illustrations'/>
             <div className="content">
                 {/* translate-x-32 */}
                 <h1>Illustrations</h1>

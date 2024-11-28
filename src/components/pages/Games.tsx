@@ -1,5 +1,4 @@
 import '../styles/Contents.css'
-import SideBar from "../SideBar";
 import WhiteLine from '../WhiteLine';
 
 import { GameList } from '../../data/GameList';
@@ -8,7 +7,6 @@ import GameCard from '../GameCard';
 function Games() {
     return (
         <>
-            <SideBar currentPage='games'/>
             <div className="ordered-content">
                 <div className="w-full flex flex-col justify-items-center">
                     <h1>Games</h1>

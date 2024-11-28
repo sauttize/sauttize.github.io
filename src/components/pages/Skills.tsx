@@ -1,7 +1,6 @@
 import '../styles/Contents.css';
 import '../styles/Skills.css';
 
-import SideBar from "../SideBar";
 import WhiteLine from '../WhiteLine';
 import Star from '/starEmpty.svg';
 import SkillButton from '../SkillButton';
@@ -28,7 +27,6 @@ function Skills() {
 
     return (
         <>
-            <SideBar currentPage='skills'/>
             <div className="ordered-content">
                 <h1>Skills</h1>
                 <h2 className='translate-x-5'>Some of the technologies I’ve used include...</h2>
