@@ -4,7 +4,7 @@ interface ImageCardProps {
 
 function ImageCard({image}: ImageCardProps) {
     return (
-        <div className="overflow-hidden h-full w-full">
+        <div>
             <a href={image}><img src={image} /></a>
         </div>
     );
