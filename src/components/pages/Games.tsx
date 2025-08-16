@@ -16,26 +16,24 @@ function Games() {
     };    
 
     return (
-        <>
-            <div className="ordered-content">
-                {selectedGame ? (
-                    <GameInfo game={selectedGame} onBack={() => setSelectedGame(null)} />
-                ) : (
-                    <>
-                        <div className="w-full flex flex-col justify-items-center">
-                            <h1>Games</h1>
-                            <h2>some of my favorite short games i've made to learn game dev</h2>
-                        </div>
-                        <WhiteLine/>
-                        <div className="games pt-2 flex auto-f-center">
-                            {GameList.map((game) => (
-                                <GameCard game={game} key={game.getName()} onClick={() => handleGameClick(game)} />
-                            ))}
-                        </div>
-                    </>
-                )}
-            </div>
-        </>
+        <div className="ordered-content">
+            {selectedGame ? (
+                <GameInfo game={selectedGame} onBack={() => setSelectedGame(null)} />
+            ) : (
+                <>
+                    <div className="w-full flex flex-col justify-items-center">
+                        <h1>Games</h1>
+                        <h2>some of the games i've made</h2>
+                    </div>
+                    <WhiteLine/>
+                    <div className="games pt-2 flex auto-f-center">
+                        {GameList.map((game) => (
+                            <GameCard game={game} key={game.getName()} onClick={() => handleGameClick(game)} />
+                        ))}
+                    </div>
+                </>
+            )}
+        </div>
     );
 }
 

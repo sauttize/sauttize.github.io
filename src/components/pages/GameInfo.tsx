@@ -4,13 +4,14 @@ import WhiteLine from "../WhiteLine";
 interface GameInfoProps {
     game : Game;
     onBack : () => void;
+    backLabel?: string;
 }
 
-function GameInfo({game, onBack} : GameInfoProps) {
+function GameInfo({game, onBack, backLabel = 'games'} : GameInfoProps) {
   return (
     <div>
         <button onClick={onBack} className="text-[var(--color-extra-light-gray)] hover:text-[var(--color-text)]">
-            {'<< Back to games'}
+            {`<< Back to ${backLabel}`}
         </button>
         <div className="basic-info flex items-baseline gap-2 auto-column">
             <h1 className="hover:text-[var(--color-primary)]"><a href={game.getLink()} target="_blank">{game.getName()}</a></h1>
@@ -31,6 +32,7 @@ function GameInfo({game, onBack} : GameInfoProps) {
                         {keyword}{index < game.getKeywords().length - 1 ? ', ' : ''}
                     </span>
                 ))}</p>
+                <p><a href={game.getLink()} target="_blank" rel="noopener noreferrer" className="text-[var(--color-primary)]">Game page!</a></p>
             </div>
             <div className="g-col-2 flex flex-col gap-[1px]">
                 {Object.entries(game.getTeam()).map(([role, member], index) => (
@@ -41,7 +43,7 @@ function GameInfo({game, onBack} : GameInfoProps) {
         <WhiteLine />
         <div className="screenshots mt-4 flex flex-col gap-4 items-center">
             {game.getScreenshots().map((screenshot, index) => (
-                <img key={index} src={screenshot} alt={`Screenshot ${index}`} className="h-full" />
+                <img key={index} src={screenshot} alt={`Screenshot ${index}`} className="h-full w-full" />
             ))}
         </div>
     </div>

@@ -1,17 +1,15 @@
 import './styles/SideBar.css';
 import SideBarButton from './SideBarButton';
-import { useState } from 'react';
+
 
 interface SideBarProps {
+    currentPage: string;
     onButtonClick: (page: string) => void;
 }
 
-function SideBar({ onButtonClick }: SideBarProps) {
-    const [currentPage, setCurrentPage] = useState('About Me');
-
+function SideBar({ currentPage, onButtonClick }: SideBarProps) {
     function HandleClick(page : string) {
         onButtonClick(page);
-        setCurrentPage(page);
     }
 
     return (
@@ -31,8 +29,7 @@ function SideBar({ onButtonClick }: SideBarProps) {
                         selected={ currentPage == 'Games' }/>
                         <SideBarButton currentPage='Projects' onButtonClick={HandleClick}
                         selected={ currentPage == 'Projects' }/>
-                        <SideBarButton currentPage='Mockups' onButtonClick={HandleClick}
-                        selected={ currentPage == 'Mockups' }/>
+                        {/* <SideBarButton currentPage='Mockups' onButtonClick={HandleClick} selected={ currentPage == 'Mockups' }/> */}
                     </ul>
                     <ul>
                         <li><a className='text-[14px]' href='https://sauttize.itch.io/' target='_blank'>itch.io</a></li>
