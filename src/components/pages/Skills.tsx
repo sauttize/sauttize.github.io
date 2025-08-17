@@ -19,6 +19,14 @@ import BlenderUnselected from '/skill_icons/blender_unselected.svg';
 import BlenderSelected from '/skill_icons/blender_selected.svg';
 import { ModelPreview } from '../ModelPreview';
 import { Pickaxe } from '../../models/Pickaxe';
+import { Computer } from '../../models/Computer';
+import { FlipPhone } from '../../models/FlipPhone';
+import { GachaMachine } from '../../models/GachaMachine';
+import { Potion } from '../../models/Potion';
+import { SchoolSupplies } from '../../models/SchoolSupplies';
+import { SchoolTable } from '../../models/SchoolTable';
+import { Sword } from '../../models/Sword';
+import { Table } from '../../models/Table';
 
 import GameInfo from './GameInfo';
 import { Game } from '../../domain/Game';
@@ -96,18 +104,35 @@ function Skills({ onRedirectPage }: SkillsPageProps) {
 
                     {selectedButton?.buttonId === 'Blender' && (<>
                         <p className='skill-name'>Blender</p>
-                        <p className='text-white'>(WIP: Still working in this section!)</p>
                         <p className='text-white'>used for:</p>
                         <div className='selected-info pt-2 grid grid-cols-3 gap-6 justify-items-center items-center w-full h-[300px]'>
                             {/* Add 3d model of pickaxe here (/models/pickaxe.glb) */}
                             <ModelPreview>
-                                <Pickaxe />
+                                <GachaMachine />
+                            </ModelPreview>
+                            <ModelPreview>
+                                <Computer />
                             </ModelPreview>
                             <ModelPreview>
                                 <Pickaxe />
                             </ModelPreview>
                             <ModelPreview>
-                                <Pickaxe />
+                                <Sword />
+                            </ModelPreview>
+                            <ModelPreview>
+                                <Potion />
+                            </ModelPreview>
+                            <ModelPreview>
+                                <Table />
+                            </ModelPreview>
+                            <ModelPreview>
+                                <SchoolSupplies />
+                            </ModelPreview>
+                            <ModelPreview>
+                                <FlipPhone />
+                            </ModelPreview>
+                            <ModelPreview>
+                                <SchoolTable />
                             </ModelPreview>
                         </div>
                     </>)}
