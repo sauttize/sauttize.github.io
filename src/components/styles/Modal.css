@@ -8,8 +8,18 @@
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(2px);
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.modal-overlay::backdrop {
+    background: rgba(37, 37, 37, 0.623);
+    backdrop-filter: blur(2px);
 }
 .modal-content {
     background: rgba(0, 0, 0, 0.61);

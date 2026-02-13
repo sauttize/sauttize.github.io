@@ -27,8 +27,8 @@ function SideBar({ currentPage, onButtonClick }: SideBarProps) {
                         selected={ currentPage == 'Illustrations' }/>
                         <SideBarButton currentPage='Games' onButtonClick={HandleClick}
                         selected={ currentPage == 'Games' }/>
-                        <SideBarButton currentPage='Projects' onButtonClick={HandleClick}
-                        selected={ currentPage == 'Projects' }/>
+                        {/* <SideBarButton currentPage='Projects' onButtonClick={HandleClick}
+                        selected={ currentPage == 'Projects' }/> */}
                         {/* <SideBarButton currentPage='Mockups' onButtonClick={HandleClick} selected={ currentPage == 'Mockups' }/> */}
                     </ul>
                     <ul>

@@ -6,6 +6,8 @@ import ComicStyle from '/illustrations/comicStyle.webp';
 import HarleyIvy from '/illustrations/HarleyandIvy.webp';
 import BlackMamba from '/illustrations/blackmamba_image.webp';
 import EmioAmiibo from '/illustrations/emio_amiibo.webp';
+import AnCrHelloKitty from '/illustrations/ac_hk.webp';
+import Persona4 from '/illustrations/persona4.webp';
 
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 
@@ -19,8 +21,9 @@ function IllustrationList({ showAll = true }: IllustrationListProps){
             {!showAll &&
                 <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}>
                     <Masonry gutter='10px'>
+                        <ImageCard image={BlackMamba} />
+                        <ImageCard image={AnCrHelloKitty} />
                         <ImageCard image={Landscape}/>
-                        <ImageCard image={HarleyIvy} />
                         <ImageCard image={ComicStyle} />
                     </Masonry>
                 </ResponsiveMasonry>}
@@ -30,9 +33,11 @@ function IllustrationList({ showAll = true }: IllustrationListProps){
                         <ImageCard image={Landscape}/>
                         <ImageCard image={HarleyIvy} />
                         <ImageCard image={ComicStyle} />
-                        <ImageCard image={ManBack}/>
+                        <ImageCard image={AnCrHelloKitty} />
                         <ImageCard image={BlackMamba} />
                         <ImageCard image={EmioAmiibo} />
+                        <ImageCard image={ManBack}/>
+                        <ImageCard image={Persona4} />
                     </Masonry>
                 </ResponsiveMasonry>}
         </>

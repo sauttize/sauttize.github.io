@@ -75,9 +75,31 @@ boppler.setScreenshots([
 ]);
 boppler.tools = ["Godot"];
 
+const theLie: Game = new Game("The Lie", ["Action", "Platformer"], 2026, ["GlobalGameJam", "2D", "Pixel Art"], "link");
+theLie.setDescription(
+    "An anonymous rich man contacted you for a mission," +
+    "you need to bring his mask back. However, the path is full of monsters and danger." +
+    "There's a reason the mask is hidden and protected from him, and you'll soon find out." +
+    "Made in 48hs for the Global Game Jam 2026. The theme was 'Mask'."
+)
+theLie.addTeamMember("Coding", "Pi0h1");
+theLie.addTeamMember("2D Art / UI", "Nicolas Tejera");
+theLie.addTeamMember("2D Art", "Benjamin Martinez");
+theLie.setLink("https://pi0h1.itch.io/the-lie");
+theLie.setImage('/games/the_lie/thumbnail.png');
+theLie.setScreenshots([
+    '/games/the_lie/sc1.png',
+    '/games/the_lie/sc2.jpeg',
+    '/games/the_lie/sc3.png',
+    '/games/the_lie/sc4.png',
+    '/games/the_lie/sc5.png'
+]);
+theLie.tools = ["Game Maker Studio"];
+
 export const GameList = [
     makeMeLaugh,
     doubtfullyEverAfter,
     boppler,
-    fiveStepsAway
+    fiveStepsAway,
+    theLie
 ]

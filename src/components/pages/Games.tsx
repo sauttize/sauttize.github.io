@@ -26,7 +26,7 @@ function Games() {
                         <h2>some of the games i've made</h2>
                     </div>
                     <WhiteLine/>
-                    <div className="games pt-2 flex auto-f-center">
+                    <div className="games pt-2 flex flex-wrap auto-f-center">
                         {GameList.map((game) => (
                             <GameCard game={game} key={game.getName()} onClick={() => handleGameClick(game)} />
                         ))}
